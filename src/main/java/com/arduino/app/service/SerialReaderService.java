@@ -70,7 +70,7 @@ public class SerialReaderService {
                 }
             }
 
-            if (serialResponse.isEmpty()) throw new Exception("Falha ao ler dados da porta seriall");
+            if (serialResponse.isEmpty()) throw new Exception("Falha ao ler dados da porta serial");
 
             dataMap = gson.fromJson(serialResponse, Map.class);
             
